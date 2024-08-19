@@ -44,7 +44,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            FAAS_VERSION=1.5.8
+            FAAS_VERSION=${{ steps.meta.outputs.tags }}
           
 
       - name: Generate artifact attestation
