@@ -28,4 +28,5 @@ jobs:
       - name: build
         run: |
           echo ${{ env }}
+          echo $GITHUB_REF 
           
