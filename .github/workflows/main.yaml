@@ -31,4 +31,5 @@ jobs:
           echo $GITHUB_REF 
           echo ${GITHUB_REF#refs/tags/v}
           echo ${GITHUB_REF#refs/tags}
+          echo ${GITHUB_REF#refs/tags/}
           
